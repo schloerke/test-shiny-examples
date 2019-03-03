@@ -1,0 +1,31 @@
+Package: testShinyExamples
+Title: Test Shiny Examples
+Version: 0.0.0.9000
+Authors@R: c(
+    person("Barret", "Schloerke", email = "barret@rstudio.com", role = c("cre", "aut")),
+    person(family = "RStudio", role = c("cph", "fnd"))
+  )
+Description: This package facilitates the manual testing and deployment of the shiny examples repo.
+License: What license it uses
+Encoding: UTF-8
+LazyData: true
+TestShinyExamplesRepo:
+    schloerke/test-shiny-examples
+ShinyExamplesRepo:
+    rstudio/shiny-examples
+Remotes:
+    hadley/shinySignals,
+    jcheng5/bubbles,
+    rstudio/websocket,
+    rstudio/DT,
+    r-lib/scales,
+    rstudio/httpuv@rc-v1.5.0,
+    rstudio/reactlog@rc-v1.0.0,
+    rstudio/shiny@rc-v1.3.0
+Imports: desc,
+    magrittr,
+    callr,
+    packrat,
+    progress,
+    remotes,
+    rsconnect
