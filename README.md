@@ -1,4 +1,4 @@
-# test-shiny-examples
+# testShinyExamples
 
 
 Test the shiny examples before a release.
