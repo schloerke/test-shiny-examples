@@ -29,6 +29,7 @@ Imports: desc,
     progress,
     remotes,
     rsconnect,
+    httr,
     shinySignals,
     bubbles,
     websocket,
@@ -37,3 +38,5 @@ Imports: desc,
     httpuv,
     reactlog,
     shiny
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 6.1.1
