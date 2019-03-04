@@ -11,7 +11,7 @@ globals$example_location <- "rstudio/shiny-examples@rc-v1.3.0"
 
 shiny_examples_dir_update <- function() {
   # set the globals shiny locatino for further use
-  globals$shiny_examples_loc <<- download_repo(
+  globals$shiny_examples_loc <- download_repo(
     globals$example_location,
     tempdir()
   )
