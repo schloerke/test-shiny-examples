@@ -1,6 +1,8 @@
 
 #' Deploy apps to a server
 #'
+#' Run this in the terminal (not RStudio IDE) as it has issues when installing some packages.
+#'
 #' @param account,server args supplied to `[rsconnect::deployApp]`
 #' @param apps A vector of three digit character values or `TRUE` to deploy all apps
 #' @param libpath library location. (Creates the path if it does not exist.)

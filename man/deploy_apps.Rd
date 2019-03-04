@@ -17,5 +17,5 @@ deploy_apps(account = "testing-apps", server = "shinyapps.io",
 \item{cores}{number of cores to use when deploying}
 }
 \description{
-Deploy apps to a server
+Run this in the terminal (not RStudio IDE) as it has issues when installing some packages.
 }
