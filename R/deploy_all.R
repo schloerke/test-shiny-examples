@@ -62,6 +62,8 @@ deploy_apps <- function(
 
   app_deps <- app_dependencies()
 
+  pkg_file <- attr(packageDescription("testShinyExamples"), "file")
+
   withr::with_libpaths(libpath, {
 
     message("Library Path: ", .libPaths()[1])
@@ -81,14 +83,16 @@ deploy_apps <- function(
       remotes::install_github(repo, ..., upgrade = upgrade)
     }
 
+
+
     # install all remotes and extra pkgs
-    install_github(desc::desc_get_field("TestShinyExamplesRepo"))
+    install_github(desc::desc_get_field("TestShinyExamplesRepo"), file = pkg_file)
 
     # install all packages
     lapply(app_deps, maybe_install_pkg)
 
     # make sure remotes and pkgs are the last remaining ones
-    install_github(desc::desc_get_field("TestShinyExamplesRepo"))
+    install_github(desc::desc_get_field("TestShinyExamplesRepo"), file = pkg_file)
 
     pb <- progress::progress_bar$new(
       total = length(apps_dirs) / cores,
