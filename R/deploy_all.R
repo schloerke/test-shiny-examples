@@ -86,13 +86,13 @@ deploy_apps <- function(
 
 
     # install all remotes and extra pkgs
-    install_github(desc::desc_get_field("TestShinyExamplesRepo"), file = pkg_file)
+    install_github(globals$testing_location, file = pkg_file)
 
     # install all packages
     lapply(app_deps, maybe_install_pkg)
 
     # make sure remotes and pkgs are the last remaining ones
-    install_github(desc::desc_get_field("TestShinyExamplesRepo"), file = pkg_file)
+    install_github(globals$testing_location, file = pkg_file)
 
     pb <- progress::progress_bar$new(
       total = length(apps_dirs) / cores,
