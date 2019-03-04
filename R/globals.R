@@ -9,7 +9,7 @@ shiny_examples_dir_update <- function() {
   globals$shiny_examples_loc <<- download_repo(
     desc::desc_get_field(
       "ShinyExamplesRepo",
-      file = attr(packageDescription("testShinyExamples"), "file")
+      file = system.file("DESCRIPTION", package= "callr")
     ),
     tempdir()
   )

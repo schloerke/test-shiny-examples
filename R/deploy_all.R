@@ -62,7 +62,7 @@ deploy_apps <- function(
 
   app_deps <- app_dependencies()
 
-  pkg_file <- attr(packageDescription("testShinyExamples"), "file")
+  pkg_file <- system.file("DESCRIPTION", package= "callr")
 
   withr::with_libpaths(libpath, {
 
