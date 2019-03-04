@@ -28,4 +28,9 @@ Imports: desc,
     packrat,
     progress,
     remotes,
-    rsconnect
+    rsconnect,
+    shinySignals,
+    bubbles,
+    websocket,
+    DT,
+    scales
