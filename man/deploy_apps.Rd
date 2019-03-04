@@ -4,8 +4,8 @@
 \alias{deploy_apps}
 \title{Deploy apps to a server}
 \usage{
-deploy_apps(account = "barret", server = "shinyapps.io", apps = TRUE,
-  libpath = "_shiny-examples-lib", cores = 3)
+deploy_apps(account = "testing-apps", server = "shinyapps.io",
+  apps = TRUE, libpath = "_shiny-examples-lib", cores = 3)
 }
 \arguments{
 \item{account, server}{args supplied to \code{[rsconnect::deployApp]}}

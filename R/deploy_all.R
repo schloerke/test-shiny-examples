@@ -7,7 +7,7 @@
 #' @param cores number of cores to use when deploying
 #' @export
 deploy_apps <- function(
-  account = "barret",
+  account = "testing-apps",
   server = "shinyapps.io",
   apps = TRUE,
   libpath = "_shiny-examples-lib",
