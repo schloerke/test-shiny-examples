@@ -81,9 +81,9 @@ deploy_apps <- function(
       }
 
       maybe_install_pkg("remotes")
-      install_github <- function(repo, ...) {
+      install_github <- function(repo, ..., upgrade = "always") {
         message("Installing github: ", repo)
-        remotes::install_github(repo, ...)
+        remotes::install_github(repo, ..., upgrade = upgrade)
       }
 
       # install all remotes and extra pkgs

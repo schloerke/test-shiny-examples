@@ -33,4 +33,7 @@ Imports: desc,
     bubbles,
     websocket,
     DT,
-    scales
+    scales,
+    httpuv,
+    reactlog,
+    shiny
