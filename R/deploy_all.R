@@ -38,10 +38,10 @@ deploy_apps <- function(
     stop("number of cores should be a numeric value")
   }
 
-  libpath <- normalizePath(libpath)
   if (!dir.exists(libpath)) {
     dir.create(libpath, recursive = TRUE)
   }
+  libpath <- normalizePath(libpath)
 
   apps_folder <- shiny_examples_dir()
   apps_dirs <- apps_folder %>%
